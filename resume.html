@@ -7,91 +7,124 @@
   <title>John Stratton Technical Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Monda');
+    @import url('https://fonts.googleapis.com/css?family=Monda');
 
-  /* Base Styles */
+    /* Base Styles */
 
-  body {
-    font-family: 'Monda', sans-serif;
-    margin: 5.5em 6.625em;
-    font-size: 1.188em;
-    line-height: 1.2;
-  }
+    body {
+      font-family: 'Monda', sans-serif;
+      margin: auto;
+      padding: 1em;
+      font-size: 0.9em;
+      line-height: 1.2;
+      min-width: 400px;
+      max-width: 425px;
+    }
 
-  a {
-    text-decoration: none;
-    border-bottom: 0.13em solid currentColor;
-    display: inline-block;
-    line-height: 0.84;
-  }
+    a {
+      text-decoration: none;
+      border-bottom: 0.13em solid currentColor;
+      display: inline-block;
+      line-height: 0.84;
+    }
 
-  a:visited,
-  h1 {
-    color: #0017ff;
-  }
+    a:visited,
+    h1 {
+      color: #0017ff;
+    }
 
-  header {
-    text-align: center;
-    margin-bottom: 0.625em;
-  }
+    header {
+      text-align: center;
+      margin-bottom: 0.625em;
+    }
 
-  h1,
-  h2,
-  p {
-    margin: 0.074em;
-  }
+    h1,
+    h2,
+    p {
+      margin: 0.074em;
+    }
 
-  h1 {
-    font-size: 1.4em;
-    font-weight: normal;
-  }
+    h1 {
+      font-size: 1.4em;
+      font-weight: normal;
+    }
 
-  h2 {
-    font-size: 1em;
-  }
+    h2 {
+      font-size: 1em;
+    }
 
-  /* /Base Styles */
+    /* /Base Styles */
 
-  .bullet {
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    background-color: #000;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0.5em 1.188em 0 -1.41em;
-  }
+    .bullet {
+      position: absolute;
+      height: 0.25em;
+      width: 0.25em;
+      background-color: #000;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0.4em 0.188em 0 -0.61em;
+    }
 
-  .email {
-    line-height: 0.85; /* adjust for the difference in underline spacing under email link */
-  }
+    .email {
+      line-height: 0.85;
+      /* adjust for the difference in underline spacing under email link */
+    }
 
-  .list {
-    margin: 0 0.625em 1.12em 1.12em;
-  }
+    .job-list {
+      margin: 0 0 1.12em 1em;
+    }
 
-  .job-list {
-    margin: 0 0.625em 1.12em 3em;
-  }
+    .job-title {
+      font-weight: bold;
+    }
 
-  .job-title {
-    font-weight: bold;
-  }
+    .justify {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2.8em;
+    }
 
-  .justify {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2.8em;
-  }
+    .list {
+      margin-bottom: 1.12em;
+    }
 
-  .single-year {
-    margin-right: 3.6em;
-  }
+    .single-year {
+      margin-right: 3.6em;
+    }
 
-  .year-range {
-    margin-right: 0.6em;
-  }
+    .year-range {
+      margin-right: 0.6em;
+    }
 
+    /* Media Queries */
+
+    @media (min-width: 768px) {
+      body {
+        margin: 5.5em auto;
+        padding: 0;
+        font-size: 1.188em;
+        line-height: 1.2;
+        max-width: 687.938px;
+      }
+
+      .bullet {
+        position: absolute;
+        height: 0.5em;
+        width: 0.5em;
+        background-color: #000;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0.5em 1.188em 0 -1.41em;
+      }
+
+      .list {
+        margin: 0 0.625em 1.12em 1.12em;
+      }
+
+      .job-list {
+        margin: 0 0.625em 1.12em 3em;
+      }
+    }
   </style>
 </head>
 
@@ -99,8 +132,12 @@
 
   <header>
     <h1>JOHN STRATTON</h1>
-    <p>502-233-2072 - <a class="email" href="mailto:jstrat0407@gmail.com">jstrat0407@gmail.com</a> - Louisville, KY</p>
-    <p><a href="https://github.com/techgladiator">GitHub</a> - <a href="https://www.linkedin.com/in/techgladiator/">LinkedIn</a></p>
+    <p>502-233-2072 -
+      <a class="email" href="mailto:jstrat0407@gmail.com">jstrat0407@gmail.com</a> - Louisville, KY</p>
+    <p>
+      <a href="https://github.com/techgladiator">GitHub</a> -
+      <a href="https://www.linkedin.com/in/techgladiator/">LinkedIn</a>
+    </p>
   </header>
 
   <div>
@@ -121,68 +158,124 @@
     <h2>Professional Development</h2>
     <div class="list">
       <p>Code Louisville (Treehouse)</p>
-      <p class="justify"><span>Front End Web Development (HTML, CSS, JavaScript)</span><span>2017</span></p>
-      <p class="justify"><span>Full Stack JavaScript (MongoDB, Express, Angular, NodeJS)</span><span>2017</span></p>
+      <p class="justify">
+        <span>Front End Web Development (HTML, CSS, JavaScript)</span>
+        <span>2017</span>
+      </p>
+      <p class="justify">
+        <span>Full Stack JavaScript (MongoDB, Express, Angular, NodeJS)</span>
+        <span>2017</span>
+      </p>
       <div class="list"></div>
       <p>RETS Electronics Institute</p>
-      <p class="justify"><span>Associates Degree in Electronics Engineering Technology</span><span>1995</span></p>
+      <p class="justify">
+        <span>Associates Degree in Electronics Engineering Technology</span>
+        <span>1995</span>
+      </p>
     </div>
   </div>
-  
+
   <div>
     <h2>Highlighted Projects</h2>
     <div class="list">
-      <p><a href="https://github.com/TechGladiator/JavaGuessingGame">https://github.com/TechGladiator/JavaGuessingGame</a></p>
+      <p>
+        <a href="https://github.com/TechGladiator/JavaGuessingGame">https://github.com/TechGladiator/JavaGuessingGame</a>
+      </p>
       <p>A guessing game made with Java for the command line.</p>
       <div class="list"></div>
-      <p><a href="https://github.com/TechGladiator/comic-collection/">https://github.com/TechGladiator/comic-collection/</a></p>
+      <p>
+        <a href="https://github.com/TechGladiator/comic-collection/">https://github.com/TechGladiator/comic-collection/</a>
+      </p>
       <p>A database for comic book collectors.</p>
       <div class="list"></div>
-      <p><a href="https://github.com/TechGladiator/vagrant-ubuntu-xenial64">https://github.com/TechGladiator/vagrant-ubuntu-xenial64</a></p>
+      <p>
+        <a href="https://github.com/TechGladiator/vagrant-ubuntu-xenial64">https://github.com/TechGladiator/vagrant-ubuntu-xenial64</a>
+      </p>
       <p>A Vagrantfile and provisioning script to setup a Vagrant box with the latest Git, Node, and MongoDB on Ubuntu 16.04.</p>
       <div class="list"></div>
-      <p><a href="https://github.com/TechGladiator/inspired-heights">https://github.com/TechGladiator/inspired-heights</a></p>
-      <p>A redesign of my brother's business web site, incorporating mobile-first responsive principles, and the addition of contact form validation.</p>
+      <p>
+        <a href="https://github.com/TechGladiator/inspired-heights">https://github.com/TechGladiator/inspired-heights</a>
+      </p>
+      <p>A redesign of my brother's business web site, incorporating mobile-first responsive principles, and the addition of
+        contact form validation.</p>
     </div>
   </div>
 
   <div>
     <h2>Professional Experience</h2>
     <div>
-      <p class="justify"><span>Interapt <span class="job-title">Teaching Assistant</span></span><span class="single-year">2017</span></p>
+      <p class="justify">
+        <span>Interapt
+          <span class="job-title">Teaching Assistant</span>
+        </span>
+        <span class="single-year">2017</span>
+      </p>
       <div class="job-list">
-        <p><span class="bullet"></span>Learned Java programming principles and best practices</p>
-        <p><span class="bullet"></span>Learned the basics of Android Studio</p>
-        <p><span class="bullet"></span>Reviewed and provided input, comments, and suggestions on course curriculum for students learning Java and Android Studio</p>
+        <p>
+          <span class="bullet"></span>Learned Java programming principles and best practices</p>
+        <p>
+          <span class="bullet"></span>Learned the basics of Android Studio</p>
+        <p>
+          <span class="bullet"></span>Reviewed and provided input, comments, and suggestions on course curriculum for students learning Java and
+          Android Studio</p>
       </div>
     </div>
     <div>
-      <p class="justify"><span>AeroTek <span class="job-title">Repair Technician</span></span><span class="year-range">2016-2017</span></p>
+      <p class="justify">
+        <span>AeroTek
+          <span class="job-title">Repair Technician</span>
+        </span>
+        <span class="year-range">2016-2017</span>
+      </p>
       <div class="job-list">
-        <p><span class="bullet"></span>Solved complex issues for clients with hardware and software failures on laptop computers</p>
-        <p><span class="bullet"></span>Kept costs down by reducing parts usage</p>
-        <p><span class="bullet"></span>A go-to resource for co-workers for answers and guidance</p>
+        <p>
+          <span class="bullet"></span>Solved complex issues for clients with hardware and software failures on laptop computers</p>
+        <p>
+          <span class="bullet"></span>Kept costs down by reducing parts usage</p>
+        <p>
+          <span class="bullet"></span>A go-to resource for co-workers for answers and guidance</p>
       </div>
     </div>
     <div>
-      <p class="justify"><span>Kelly Connect <span class="job-title">iOS Senior Advisor</span></span><span class="year-range">2012-2016</span></p>
+      <p class="justify">
+        <span>Kelly Connect
+          <span class="job-title">iOS Senior Advisor</span>
+        </span>
+        <span class="year-range">2012-2016</span>
+      </p>
       <div class="job-list">
-        <p><span class="bullet"></span>Maintained a high level of customer satisfaction</p>
-        <p><span class="bullet"></span>Advised co workers during calls to help provide excellent customer service</p>
-        <p><span class="bullet"></span>Promoted to Senior Advisor after 2 years</p>
-        <p><span class="bullet"></span>Mentored and coached new advisors</p>
+        <p>
+          <span class="bullet"></span>Maintained a high level of customer satisfaction</p>
+        <p>
+          <span class="bullet"></span>Advised co workers during calls to help provide excellent customer service</p>
+        <p>
+          <span class="bullet"></span>Promoted to Senior Advisor after 2 years</p>
+        <p>
+          <span class="bullet"></span>Mentored and coached new advisors</p>
       </div>
     </div>
     <div>
-      <p class="justify"><span>Geek Squad <span class="job-title">CIA</span></span><span class="year-range">2008-2010</span></p>
+      <p class="justify">
+        <span>Geek Squad
+          <span class="job-title">CIA</span>
+        </span>
+        <span class="year-range">2008-2010</span>
+      </p>
       <div class="job-list">
-        <p><span class="bullet"></span>Consistently high metric scores in quality and first-time repair rate</p>
+        <p>
+          <span class="bullet"></span>Consistently high metric scores in quality and first-time repair rate</p>
       </div>
     </div>
     <div>
-      <p class="justify"><span>UPS <span class="job-title">Level 3 Electronic Repair Technician</span></span><span class="year-range">2006-2008</span></p>
+      <p class="justify">
+        <span>UPS
+          <span class="job-title">Level 3 Electronic Repair Technician</span>
+        </span>
+        <span class="year-range">2006-2008</span>
+      </p>
       <div class="job-list">
-        <p><span class="bullet"></span>Earned Employee of the Month by regularly meeting production goals and sustaining high quality repairs</p>
+        <p>
+          <span class="bullet"></span>Earned Employee of the Month by regularly meeting production goals and sustaining high quality repairs</p>
       </div>
     </div>
   </div>
